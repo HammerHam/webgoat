@@ -2,7 +2,7 @@ name: SonarPass1
 on:
   push:
     branches:
-      - master # or the name of your main branch
+      - 891 # or the name of your main branch
 
 jobs:
   build:
