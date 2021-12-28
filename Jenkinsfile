@@ -1,5 +1,5 @@
 node {
-    agent { label 'java' }
+    agent { label 'linux' }
   stage('SCM') {
     checkout scm
   }
