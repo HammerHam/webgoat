@@ -1,4 +1,5 @@
 node {
+    agent { label 'java' }
   stage('SCM') {
     checkout scm
   }
