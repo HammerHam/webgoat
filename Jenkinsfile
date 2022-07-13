@@ -4,8 +4,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-
-                echo 'Building..'
+                
+         sh '''#!/bin/bash
+                 echo "hello world" 
+         '''
+                
             }
         }
         stage('Test') {
