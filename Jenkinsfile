@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                
+         echo 'Building....'          
          sh '''#!/bin/bash
-                 mvn deploy
+                 mvn package
          '''
                 
             }
@@ -18,7 +18,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+         echo 'Deploying....'          
+         sh '''#!/bin/bash
+                 mvn deploy
+         '''
             }
         }
     }
